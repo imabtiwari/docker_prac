@@ -2,9 +2,10 @@ pipeline {
    agent any
 
    stages {
-      stage('git clone') {
+      stage('git fetching directories') {
          steps {
-            echo 'Cloning'
+            sh 'ls -la'
+            sh 'pwd'
          }
          
       }
