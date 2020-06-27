@@ -11,7 +11,7 @@ pipeline {
       }
       stage('Docker Bulid') {
          steps {
-            sh 'sudo docker build -t "specular-Shwetank" .'
+            sh 'sudo docker build -t "specular-shwetank" .'
          }
          
       }
