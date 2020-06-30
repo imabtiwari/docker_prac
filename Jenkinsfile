@@ -1,5 +1,10 @@
 pipeline {
    agent any
+   
+       environment {
+        USER_NAME = 'imabtiwari'
+        MY_PASSWORD= 'abhishek@51'
+    }
 
    stages {
       stage('git fetching directories') {
@@ -17,7 +22,7 @@ pipeline {
       }
       stage('docker push to registery') {
          steps {
-            sh 'echo "abhishek@51" | docker login --username imabtiwari --password-stdin'
+            sh 'echo ${MY_PASSWORD} | docker login --username ${abhishek@51} --password-stdin'
             sh 'docker push imabtiwari/jenkins-1:latest'
          }
          
