@@ -11,7 +11,7 @@ pipeline {
       }
       stage('Docker Bulid') {
          steps {
-            sh 'docker build -t "specular-shwetank" .'
+            sh 'docker build -t "imabitiwari/jenkins-1" .'
          }
          
       }
