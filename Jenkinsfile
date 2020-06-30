@@ -17,7 +17,8 @@ pipeline {
       }
       stage('docker push to registery') {
          steps {
-            echo 'docker push imabtiwari/repo'
+            sh 'echo "abhishek@51" | docker login --username imabtiwari --password-stdin'
+            sh 'docker push imabitiwari/jenkins-1:1'
          }
          
       }
