@@ -3,7 +3,7 @@ pipeline {
    
        environment {
         USER_NAME = 'imabtiwari'
-        MY_PASSWORD = 'abhishek@51'
+        MY_PASSWORD =  credentials('mypass')
     }
 
    stages {
